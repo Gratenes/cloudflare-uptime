@@ -1,0 +1,26 @@
+name = "uptime"
+type = "webpack"
+account_id = ""
+workers_dev = true
+route = ""
+zone_id = ""
+webpack_config = "node_modules/flareact/webpack"
+compatibility_date = "2023-07-03"
+
+[site]
+bucket = "out"
+entry-point = "./"
+
+[triggers]
+crons = ["0 */1 * * *"]
+
+[kv]
+kv_namespaces = [
+    { binding = "__STATIC_CONTENT", id = "7b66ef723ed54adb94e176625430bc60" },
+    { binding = "STATUS", id = "5a70afb2ab984572bf8bdab49343d2a4" }
+]
+
+kv-namespaces = [
+    { binding = "__STATIC_CONTENT", id = "7b66ef723ed54adb94e176625430bc60" },
+    { binding = "STATUS", id = "5a70afb2ab984572bf8bdab49343d2a4" }
+]

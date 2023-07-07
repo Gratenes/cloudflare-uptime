@@ -1,0 +1,12 @@
+{
+  "include": [
+    "**/*.d.ts",
+    "utils",
+    "component",
+    "pages"
+  ],
+  "compilerOptions": {
+    "jsx": "react",
+    "allowSyntheticDefaultImports": true
+  }
+}
